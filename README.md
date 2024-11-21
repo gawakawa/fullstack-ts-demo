@@ -1,41 +1,20 @@
-# フルスタック TypeScript デモアプリ
-
-## これは何？
-Next.js と NestJS で作る勉強用のデモアプリです。
-DB は MySQL で、 Google Cloud の Cloud Run で動作させます。
-
-## バージョン情報
-- node 22.11.0
-
-## プロジェクト作成方法
-
-### フロントエンド (Next.js)
+docker
 ```bash
-npx create-next-app@latest
-```
-インストール時のプロンプトには以下のように答える
-```bash
-What is your project named? frontend
-Would you like to use TypeScript? Yes
-Would you like to use ESLint? Yes
-Would you like to use Tailwind CSS? Yes
-Would you like your code inside a `src/` directory? Yes
-Would you like to use App Router? (recommended) Yes
-Would you like to use Turbopack for `next dev`?  No
-Would you like to customize the import alias (`@/*` by default)? No
+cd docker
+docker compose up -d
 ```
 
-以下のコマンドで `localhost:3000` に画面が表示されたら OK
+DB
 ```bash
-npm run dev
+docker compose exec mysql mysql -u user -p appdb
 ```
 
-### バックエンド (NestJS)
+BE
 ```bash
-npm i -g @nestjs/cli
-nest new backend
+docker compose exec backend bash
 ```
-以下のコマンドで `localhost:3000` に画面が表示されたら OK
+
+FE
 ```bash
-npm run start:dev
+docker compose exec frontend bash
 ```
