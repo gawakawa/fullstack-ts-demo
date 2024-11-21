@@ -1,0 +1,13 @@
+{
+    "name": "myapp",
+    "private": true,
+    "workspaces": [
+        "packages/*"
+    ],
+    "scripts": {
+        "build": "yarn workspaces run build",
+        "dev": "yarn workspaces run dev",
+        "lint": "yarn workspaces run lint",
+        "test": "yarn workspaces run test"
+    }
+}
