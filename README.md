@@ -18,3 +18,8 @@ FE
 ```bash
 docker compose exec frontend bash
 ```
+
+.env
+```bash
+cp .env.example .env
+```
