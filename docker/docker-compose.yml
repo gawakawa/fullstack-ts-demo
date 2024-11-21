@@ -24,6 +24,7 @@ services:
       - backend_node_modules:/app/packages/backend/node_modules
     ports:
       - "3000:3000"
+      - "5555:5555"
     environment:
       - DATABASE_HOST=${MYSQL_HOST}
       - DATABASE_PORT=${MYSQL_PORT}

@@ -23,3 +23,5 @@ docker compose exec frontend bash
 ```bash
 cp .env.example .env
 ```
+
+prisma
