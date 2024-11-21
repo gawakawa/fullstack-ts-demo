@@ -25,3 +25,7 @@ cp .env.example .env
 ```
 
 prisma
+```bash
+yarn add prisma
+yarn prisma migrate dev --name init
+```
