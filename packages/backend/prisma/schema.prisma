@@ -4,7 +4,7 @@ generator client {
 
 datasource db {
   provider = "mysql"
-  url      = "mysql://user:password@mysql:3306/appdb"
+  url      = "mysql://root:rootpassword@mysql:3306/appdb"
 }
 
 model User {
